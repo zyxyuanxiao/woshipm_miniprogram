@@ -11,13 +11,52 @@
     <view class="module_wrap">
       <form>
         <view class="element">
-          <input type="text" placeholder="手机 / 用户名 / 邮箱"></input>
+          <input type="text" placeholder="手机 / 用户名 / 邮箱" bindinput="bindUsernameInput"></input>
         </view>
         <view class="element password">
-          <input type="{{ password['type'] }}" placeholder="密码"></input>
+          <input type="{{ password['type'] }}" placeholder="密码" bindinput="bindPasswordInput"></input>
           <image class="show_password" src="/resource/eye_{{ password['eyeImage'] }}.png" bindtap="changePasswordType"></image>
         </view>
+        <view class="notice_wrap">
+          <p class="notice">
+            {{ form['notice'] }}
+          </p>
+        </view>
+        <view class="submit_button">
+          <button type="default" hover-class="submit_button_hover" form-type="submit" bindtap="submit_form">登录</button>
+        </view>
+        <view class="more_link">
+          <navigator url="/pages/register/register" class="register link">注册</navigator>
+          <navigator url="/pages/forgetpass/forgetpass" class="forgetpass link">忘记密码</navigator>
+        </view>
+        <view class="thirdpart">
+          <view class="thirdpart_title">
+            其他方式登录
+          </view>
+          <view class="list">
+            <navigator class="wechat link">
+              <image src="/resource/wechat.png"></image>
+            </navigator>
+          </view>
+        </view>
       </form>
+      <view class="question" bindtap="displayQuestionBox">
+        遇到问题
+      </view>
+    </view>
+  </view>
+  <view class="mask" hidden="{{ questionBox['isHide'] }}" catchtap="displayQuestionBox">
+    <view class="question_box mask_box" catchtap="{{ true }}">
+      <view class="title">
+        遇到问题
+      </view>
+      <view class="content">
+        <view>使用过程中，遇到任何问题，请及时联系我们。</view>
+        邮箱：jacky@woshipm.com
+      </view>
+      <view class="close_button" bindtap="displayQuestionBox">
+        关闭
+      </view>
     </view>
   </view>
 </view>

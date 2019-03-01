@@ -28,3 +28,25 @@ page {
   0% { opacity:0; }
   100% { opacity:1; }
 }
+
+.mask {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .8);
+  z-index: 100;
+  -webkit-transform: translateZ(0);
+}
+.mask_box .close_button {
+  margin: 54rpx 0 0 0;
+  font-size: 28rpx;
+  color: #fff;
+  display: block;
+  border-radius: 8rpx;
+  width: 218rpx;
+  line-height: 76rpx;
+  background: #000;
+  text-align:center;
+}
