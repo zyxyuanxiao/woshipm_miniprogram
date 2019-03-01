@@ -1,0 +1,26 @@
+<!--components/header_default/header_default.wxml-->
+
+<view class="header">
+  <view class="mw_padding">
+    <navigator url="/pages/index/index" open-type="reLaunch" class="header_logo">
+      <image class="logo_image" mode="scaleToFill" src="/resource/logo.png"></image>
+    </navigator>
+    <view class="right_menu">
+      <image class="show" hidden="{{ !rightMenu.isHidden }}" src="/resource/menu_show.png" bindtap="displayRightMenuWin" ></image>
+      <image class="show" hidden="{{ rightMenu.isHidden }}" src="/resource/menu_close.png" bindtap="displayRightMenuWin" ></image>
+    </view>
+  </view>
+</view>
+
+<view class="right_menu_win {{ rightMenu.isHidden?'':'fade-show' }}" hidden="{{ rightMenu.isHidden }}" >
+  <view class="mw_padding">
+    <form class="search">
+      <input class="keyword" type="text" name="kw" placeholder="输入搜索关键词"></input>
+    </form>
+    <view class="hotkeyword_list">
+      <navigator url="{{ item['link'] }}" class="item" wx:for="{{ rightMenu.kwList }}" wx:key="index">
+        {{ item['text'] }}
+      </navigator>
+    </view>
+  </view>
+</view>

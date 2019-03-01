@@ -1,0 +1,8 @@
+/* pages/login/login.wxss */
+
+@import "/app.wxss";
+@import "/css/user.wxss";
+
+page {
+  background-color:#FFF;
+}

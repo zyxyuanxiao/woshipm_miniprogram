@@ -1,0 +1,42 @@
+<com_header_default></com_header_default>
+
+<swiper class="swiper_list" indicator-dots indicator-color="#FFF" indicator-active-color="#3889C2" autoplay circular>
+  <swiper-item wx:for="{{ swiperList }}" wx:key="index">
+    <navigator class="item" url="{{ item['link'] }}">
+      <text class="title">{{ item['title'] }}</text>
+      <image src="{{ item['image'] }}" mode="widthFix"></image>
+    </navigator>
+  </swiper-item>
+</swiper>
+
+<view class="home_tab">
+  <view class="mw_padding">
+    <view class="title">
+      最新文章
+    </view>
+    <view class="article_list">
+      <navigator class="item" wx:for="{{ newArticleList }}" wx:key="index">
+        {{ item['text'] }}
+      </navigator>
+    </view>
+  </view>
+</view>
+
+<view class="top_activity">
+  <view class="mw_padding">
+    <navigator url="">
+      <view class="cover">
+        <image class="cove_image" mode="widthFix" src="http://image.woshipm.com/wp-files/2019/01/ZqDGYPTY83y9C9Enk5U3.jpg!/both/380x190"></image>
+      </view>
+      <view class="title">
+        <image class="icon" src="http://www.woshipm.com/wp-content/themes/Qing/build/img/av.png"></image>
+        线上课程｜没有产品经验，如何证明自己具备优秀的产品能力
+      </view>
+    </navigator>
+    <view class="meta">2019-03-03 9:00-18:00  | 全国多地开课</view>
+  </view>
+</view>
+
+<com_article_list_normal list="{{ articleList }}" isLoadArticle="1" bindloadArticle="loadArticle"></com_article_list_normal>
+
+<com_footer_default></com_footer_default>

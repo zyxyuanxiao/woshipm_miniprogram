@@ -1,0 +1,18 @@
+/* components/title_normal/title_normal.wxss */
+.title_normal {
+  font-size: 28rpx;
+  border-bottom: 2rpx solid #eee;
+  padding-bottom: 6rpx;
+  font-weight: 700;
+  background:#FFF;
+}
+
+.title_normal i {
+  display: inline-block;
+  height: 32rpx;
+  width: 6rpx;
+  border-radius: 999em;
+  background-color: #3889c2;
+  margin-right: 6rpx;
+  vertical-align: middle;
+}

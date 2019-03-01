@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "com_header_default":"/components/header_default/header_default",
+    "com_footer_default":"/components/footer_default/footer_default",
+    "com_article_list_normal":"/components/article_list_normal/article_list_normal",
+    "com_title_normal":"/components/title_normal/title_normal"
+  }
+}

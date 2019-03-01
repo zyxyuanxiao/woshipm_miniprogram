@@ -1,0 +1,11 @@
+/* components/footer_default/footer_default.wxss */
+.footer {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  padding: 15px;
+  font-size: 12px;
+  text-align: center;
+  color: #515666;
+}

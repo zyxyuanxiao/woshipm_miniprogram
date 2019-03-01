@@ -1,0 +1,4 @@
+<!--components/footer_default/footer_default.wxml-->
+<view class="footer">
+  ©2019 - 人人都是产品经理
+</view>

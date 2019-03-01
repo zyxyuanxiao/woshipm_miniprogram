@@ -1,0 +1,30 @@
+/**app.wxss**/
+page {
+  color:rgba(0,0,0,.8);
+  font-size:32rpx;
+  line-height:1.8;
+  background-color:#F0F2FA;
+}
+
+.mw_padding {
+  padding:0 32rpx;
+  margin:0 auto;
+  width:100%;
+  box-sizing:border-box;
+}
+
+.mw {
+  margin:0 auto;
+  width:100%;
+  box-sizing:border-box;
+}
+
+
+.fade-show {
+  animation:fade-show 0.5s;
+}
+
+@keyframes fade-show {
+  0% { opacity:0; }
+  100% { opacity:1; }
+}

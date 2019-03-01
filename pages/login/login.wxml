@@ -1,0 +1,23 @@
+<!--pages/login/login.wxml-->
+
+<view class="user_module login_module">
+  <view class="mw_padding">
+    <view class="module_title">
+      <text>登录人人都是产品经理</text>
+      <view class="sub_title">
+        同步登录 起点学院、运营派等平台
+      </view>
+    </view>
+    <view class="module_wrap">
+      <form>
+        <view class="element">
+          <input type="text" placeholder="手机 / 用户名 / 邮箱"></input>
+        </view>
+        <view class="element password">
+          <input type="{{ password['type'] }}" placeholder="密码"></input>
+          <image class="show_password" src="/resource/eye_{{ password['eyeImage'] }}.png" bindtap="changePasswordType"></image>
+        </view>
+      </form>
+    </view>
+  </view>
+</view>

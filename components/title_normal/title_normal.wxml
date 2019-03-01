@@ -1,0 +1,4 @@
+<!--components/title_normal/title_normal.wxml-->
+<view class="title_normal">
+  <i></i>{{ title }}
+</view>

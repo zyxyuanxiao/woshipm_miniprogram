@@ -1,0 +1,85 @@
+<!--pages/article/article.wxml-->
+<com_header_default></com_header_default>
+
+<view class="article_detail">
+  <view class="mw_padding">
+    <view class="title">后台系统：订单管理</view>
+    <view class="author">
+      <view class="info">
+        <view class="avatar">
+          <image class="image" src="http://image.woshipm.com/wp-files/2018/02/Pn91dFRBE5txgrFfUpet.jpg!/both/32x32"></image>
+        </view>
+        <view class="right">
+          <navigator class="username">姜荨</navigator>
+          <view class="issuing_time">
+            2小时前
+          </view>
+        </view>
+      </view>
+      <view class="right_module">
+        <view class="subscription">订阅本栏</view>
+      </view>
+    </view>
+    <view class="summary">订单管理记录了所有的交易数据，在后台系统设计工作中是非常重要的一环。</view>
+    <view class="content">
+      <image src="http://image.woshipm.com/wp-files/2019/02/xRP7zTIsC6qgM0yKOKmC.png" mode="widthFox"></image>
+      <view>
+        订单管理是后台系统中较为重要的一部分，它记录了所有的交易数据，可以对订单进行监控和操作，与用户、运营、财务等都有着密切的关系。以下就来总结一下后台系统中订单管理的设计。
+      </view>
+      <view>
+        一般来说，订单管理后台的操作用户都是公司内部人员，但需要支持的实际上还有C端用户的需求。所以在设计时，订单管理系统需要包括两部分的内容：
+      </view>
+      <view>
+        首先，在设计后台前，需要明确的就是C端用户的操作场景以及在该场景中后台需要支持的操作。如下图所示，是一个简单的订单运转流程：
+      </view>
+    </view>
+    <view class="tags_list">
+      <navigator class="item">
+        2年
+      </navigator>
+      <navigator class="item">
+        初级
+      </navigator>
+      <navigator class="item">
+        后台系统
+      </navigator>
+      <navigator class="item">
+        订单管理系统
+      </navigator>
+    </view>
+  </view>
+  <view class="action">
+    <view class="collect button">
+      收藏 | 0
+    </view>
+    <view class="like button">
+      点赞 | 4
+    </view>
+  </view>
+  <view class="article_comment">
+    <view class="mw_padding">
+      <com_title_normal title="文章评论"></com_title_normal>
+      <view class="list">
+        <view class="item">
+          <view class="avatar">
+            <image src="http://img.woshipm.com/PM_U_201612_20161228152428_4292.jpg?imageView2/1/w/32/h/32/q/100"></image>
+          </view>
+          <view class="right_module">
+            <view class="username">智商都被拿去卖萌了</view>
+            <view class="content">
+              没毛病
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="related_article">
+    <view class="mw_padding">
+      <com_title_normal title="推荐阅读"></com_title_normal>
+      <com_article_list_normal list="{{ articleList }}"></com_article_list_normal>
+    </view>
+  </view>
+</view>
+
+<com_footer_default></com_footer_default>

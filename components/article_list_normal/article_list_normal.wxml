@@ -1,0 +1,17 @@
+<!--components/article_list_normal/article_list_normal.wxml-->
+<view class="article_list_normal">
+  <view class="mw">
+    <navigator class="item" url="/pages/article/article?id={{ item['id'] }}" wx:for="{{ list }}" wx:key="index">
+      <view class="cover">
+        <image class="cover" mode="widthFix" src="{{ item['cover'] }}"></image>
+      </view>
+      <view class="detail">
+        <view class="title">{{ item['title'] }}</view>
+        <view class="date">{{ item['date'] }}</view>
+      </view>
+    </navigator>
+    <view class="load_article" wx:if="{{ isLoadArticle }}">
+      <text class="text" bindtap="loadArticle">加载更多</text>
+    </view>
+  </view>
+</view>

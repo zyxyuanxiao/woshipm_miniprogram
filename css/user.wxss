@@ -1,0 +1,54 @@
+.user_module {
+  position: relative;
+  margin:0 auto;
+  width: 600rpx;
+  height: 942rpx;
+  background: #fff;
+}
+
+.module_title {
+  height: 74rpx;
+  padding: 20rpx 44rpx 80rpx;
+}
+
+.module_title text {
+  font-size: 40rpx;
+  line-height: 40rpx;
+  color: #111;
+  font-weight: bold;
+}
+
+.module_title .sub_title {
+  font-size: 28rpx;
+  color: #bfbfbf;
+  line-height: 26rpx;
+  padding: 22rpx 0 0 0;
+}
+
+.module_wrap form {
+  padding: 0 44rpx;
+}
+
+.module_wrap form .element {
+  width: 480rpx;
+  border-bottom: 2rpx #BFBFBF solid;
+}
+
+.module_wrap form .element input {
+  width: 480rpx;
+  padding: 0 0 28rpx 4rpx;
+  font-size: 28rpx;
+  color: #000;
+  line-height: 32rpx;
+}
+
+.module_wrap form .element.password {
+  display:flex;
+  padding: 27px 0 0;
+}
+
+.module_wrap form .element.password .show_password {
+  padding: 0 12px 0 0;
+  width:60rpx;
+  height:54rpx;
+} 

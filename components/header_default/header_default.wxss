@@ -1,0 +1,83 @@
+/* components/header_default/header_default.wxss */
+@import "/app.wxss";
+
+.header {
+  width:100%;
+  height:88rpx;
+  overflow:hidden;
+  box-sizing:border-box;
+  background-color:#FFF;
+  border-bottom:1px solid #eee;
+}
+
+.header .mw_padding {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.header .header_logo {
+  display:flex;
+}
+
+.header .logo_image {
+  width:320rpx;
+  height:60rpx;
+}
+
+.right_menu image {
+  width:30rpx;
+  height:30rpx;
+}
+
+.right_menu_win {
+  display:block;
+  position:absolute;
+  z-index:99;
+  top:88rpx;
+  left:0;
+  width:100%;
+  height:100%;
+  background:#FFF;
+}
+
+.right_menu_win .mw_padding {
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+.right_menu_win .search {
+  padding:30rpx 0;
+  width:100%;
+}
+
+.right_menu_win .search .keyword {
+  margin:0 auto;
+  padding:0 24rpx;
+  height:80rpx;
+  font-size: 32rpx;
+  background-color: #f4f6fa;
+  border-radius: 6rpx;
+  overflow: hidden;
+}
+
+.right_menu_win .hotkeyword_list {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-evenly;
+  padding:15px 0;
+}
+
+.right_menu_win .hotkeyword_list .item {
+  width: 33.333%;
+  float: left;
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+  text-align:center;
+  height: 80rpx;
+  line-height:80rpx;
+  font-size: 28rpx;
+  color:#666;
+}

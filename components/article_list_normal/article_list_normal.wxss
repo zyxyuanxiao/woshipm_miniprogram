@@ -1,0 +1,55 @@
+/* components/article_list_normal/article_list_normal.wxss */
+@import "/app.wxss";
+
+.article_list_normal {
+  background-color:#FFF;
+}
+
+.article_list_normal .item {
+  display:flex;
+  padding:30rpx 0;
+  border-bottom:1px solid #eee;
+}
+
+.article_list_normal .item .cover {
+  width: 220rpx;
+  height: 150rpx;
+  margin-right: 30rpx;
+  border-radius: 6rpx;
+}
+
+.article_list_normal .item .cove_image {
+  width:100%;
+}
+
+.article_list_normal .detail .title {
+  font-size: 32rpx;
+  line-height: 1.2;
+  margin: 0 0 20rpx;
+  font-weight: 700;
+  color:rgba(0,0,0,.8);
+  height: 2.4em;
+  overflow: hidden;
+}
+
+.article_list_normal .detail .date {
+  font-size: 24rpx;
+  color: #999;
+  padding-top: 10rpx;
+}
+
+.load_article {
+  width:100%;
+  padding: 60rpx 0;
+  text-align:center;
+}
+
+.load_article text {
+  display: inline-block;
+  color: #3889c2;
+  border: 1px solid #3889c2;
+  border-radius: 3px;
+  font-size: 12px;
+  padding: 3px 12px;
+  background-color: #fff;
+}

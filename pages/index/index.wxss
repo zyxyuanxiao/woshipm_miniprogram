@@ -1,0 +1,79 @@
+.swiper_list {
+  width:100%;
+  height:400rpx;
+}
+
+.swiper_list .title {
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:40rpx;
+  padding:10rpx 20rpx;
+  font-size:30rpx;
+  font-weight:700;
+  color:#FFF;
+}
+
+.swiper_list image {
+  width:100%;
+}
+
+.home_tab {
+  padding:20rpx 0;
+  margin-bottom:20rpx;
+  background:#FFF;
+}
+
+.home_tab .mw_padding {
+  display: flex;
+  color: #666;
+  font-size: 28rpx;
+  line-height:50rpx;
+}
+
+.home_tab .title {
+  margin-right:24rpx;
+  color: #333;
+  font-weight: 700;
+}
+
+.home_tab .article_list .item {
+  display: inline-block;
+  margin-right: 24rpx;
+  color: #666;
+}
+
+.top_activity {
+  padding:40rpx 0;
+  margin:40rpx 0;
+  background:#FFF;
+}
+
+.top_activity .cover {
+  width:100%;
+  border-radius:6rpx;
+}
+
+.top_activity .cover image {
+  width:100%
+}
+
+.top_activity .title {
+  line-height:1.6;
+  font-size:32rpx;
+  font-weight:700;
+  color:rgba(0,0,0,.8);
+}
+
+.top_activity .title .icon {
+  float:left;
+  margin:9rpx 8rpx 0 0;
+  width:34rpx;
+  height:32rpx;
+}
+
+.top_activity .meta {
+  line-height:42rpx;
+  font-size: 12px;
+  color: #999;
+}
