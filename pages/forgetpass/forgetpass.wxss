@@ -1,0 +1,12 @@
+/* pages/forgetpass/forgetpass.wxss */
+
+@import "/app.wxss";
+@import "/css/user.wxss";
+
+page {
+  background-color:#FFF!important;
+}
+
+.more_link {
+  justify-content:center!important;
+}

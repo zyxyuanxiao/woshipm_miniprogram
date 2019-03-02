@@ -1,7 +1,9 @@
 {
   "pages":[
-    "pages/login/login",
     "pages/index/index",
+    "pages/forgetpass/forgetpass",
+    "pages/register/register",
+    "pages/login/login",
     "pages/article/article"
   ],
   "window":{

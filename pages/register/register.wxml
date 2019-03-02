@@ -1,0 +1,33 @@
+<!--pages/register/register.wxml-->
+
+<view class="user_module register_module">
+  <view class="mw_padding">
+    <view class="module_title">
+      <text>欢迎来到人人都是产品经理</text>
+    </view>
+    <view class="module_wrap">
+      <form>
+        <view class="element">
+          <input type="text" placeholder="请输入手机号" bindinput="bindUsernameInput"></input>
+        </view>
+        <view class="element password">
+          <input type="text" placeholder="验证码" bindinput="bindPasswordInput"></input>
+          <text class="get_code" hidden="{{ code['isGet']==true }}" bindtap="getCode">获取验证码</text>
+          <text class="get_code" hidden="{{ code['isGet']==false }}">请输入验证码{{ code['codeNum'] }}</text>
+        </view>
+        <view class="notice_wrap">
+          <p class="notice">
+            {{ form['notice'] }}
+          </p>
+        </view>
+        <view class="submit_button">
+          <button type="default" hover-class="submit_button_hover" form-type="submit" bindtap="submit_form">下一步</button>
+        </view>
+        <view class="more_link">
+          <navigator url="/pages/login/login" class="login link" open-type="reLaunch">登录</navigator>
+        </view>
+      </form>
+    </view>
+  </view>
+</view>
+

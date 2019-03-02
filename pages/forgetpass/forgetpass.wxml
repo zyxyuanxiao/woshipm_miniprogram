@@ -1,0 +1,28 @@
+<!--pages/register/register.wxml-->
+
+<view class="user_module register_module">
+  <view class="mw_padding">
+    <view class="module_title">
+      <text>请输入你的登录账号</text>
+    </view>
+    <view class="module_wrap">
+      <form>
+        <view class="element">
+          <input type="text" placeholder="请输入手机 / 邮箱 / 用户名" bindinput="bindUsernameInput"></input>
+        </view>
+        <view class="notice_wrap">
+          <p class="notice">
+            {{ form['notice'] }}
+          </p>
+        </view>
+        <view class="submit_button">
+          <button type="default" hover-class="submit_button_hover" form-type="submit" bindtap="submit_form">下一步</button>
+        </view>
+        <view class="more_link">
+          <navigator url="/pages/login/login" class="login link" open-type="reLaunch">登录</navigator>
+        </view>
+      </form>
+    </view>
+  </view>
+</view>
+

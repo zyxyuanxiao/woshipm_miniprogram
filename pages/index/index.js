@@ -34,7 +34,7 @@ Page({
       },
       {
         text:"我的收藏",
-        link:""
+        link:"/pages/login/login"
       }
     ],
     articleList:[

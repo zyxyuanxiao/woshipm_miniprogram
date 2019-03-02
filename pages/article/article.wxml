@@ -49,12 +49,12 @@
     </view>
   </view>
   <view class="action">
-    <view class="collect button">
+    <navigator class="collect button" url="/pages/login/login">
       收藏 | 0
-    </view>
-    <view class="like button">
+    </navigator>
+    <navigator class="like button">
       点赞 | 4
-    </view>
+    </navigator>
   </view>
   <view class="article_comment">
     <view class="mw_padding">
